@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- الصفحة الرئيسية -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- صفحة هيئة التدريس -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/faculty-staff.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- صفحة الفعاليات -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/events.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- تفاصيل الفعالية -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/event-details.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- صفحة التواصل -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/contact.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <!-- مرافق الحرم -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/campus-facilities.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- صفحة الخريجين -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/alumni.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <!-- صفحة القبول -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/admissions.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- صفحة الأكاديميات -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/academics.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- صفحة عن الأكاديمية -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/about.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <!-- صفحة الخطأ -->
+   <url>
+      <loc>https://www.mayatrainingacadmey.online/404.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.1</priority>
+   </url>
+
+</urlset>
