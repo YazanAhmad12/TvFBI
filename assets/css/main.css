@@ -1747,54 +1747,9 @@ img[loading="lazy"] {
   margin: 0 auto;
 }
 
-.video-showcase {
-  max-width: 900px;
-  margin: 40px auto 0;
-}
-
-.video-wrapper-custom {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
-  border: 2px solid var(--border-color);
-  background: #000;
-}
-
-.video-player {
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 14px;
-  background: #000;
-}
-
-.video-player::-webkit-media-controls-panel {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
-}
-
 @media (max-width: 768px) {
   .experience-tour {
     padding: 50px 0;
-  }
-
-  .video-showcase {
-    margin-top: 24px;
-  }
-
-  .video-wrapper-custom {
-    border-radius: 12px;
-    border-width: 1px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .video-player {
-    border-radius: 10px;
   }
 }
 
