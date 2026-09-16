@@ -1725,6 +1725,77 @@ img[loading="lazy"] {
 /*--------------------------------------------------------------
 # Recent News Section
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Experience Tour / Video Section
+--------------------------------------------------------------*/
+.experience-tour {
+  background: var(--background-color);
+  padding: 80px 0;
+}
+
+.experience-tour .section-badge {
+  display: inline-block;
+}
+
+.experience-tour .section-title h2 {
+  text-align: center;
+}
+
+.experience-tour .section-title p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.video-showcase {
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.video-wrapper-custom {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  border: 2px solid var(--border-color);
+  background: #000;
+}
+
+.video-player {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #000;
+}
+
+.video-player::-webkit-media-controls-panel {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 768px) {
+  .experience-tour {
+    padding: 50px 0;
+  }
+
+  .video-showcase {
+    margin-top: 24px;
+  }
+
+  .video-wrapper-custom {
+    border-radius: 12px;
+    border-width: 1px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-player {
+    border-radius: 10px;
+  }
+}
+
 .recent-news {
   background: var(--bg-soft);
 }
@@ -3321,6 +3392,23 @@ img[loading="lazy"] {
   overflow: hidden;
 }
 
+.map-container-custom {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.map-container-custom iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
 .map-sidebar {
   padding: 24px;
   background: var(--bg-soft);
@@ -3396,8 +3484,13 @@ img[loading="lazy"] {
     padding: 24px;
   }
 
-  .tour-visual .video-wrapper {
-    height: 200px;
+  .map-container-custom {
+    height: 260px;
+    border-radius: 8px;
+  }
+
+  .map-container-custom iframe {
+    border-radius: 8px;
   }
 }
 
@@ -4099,14 +4192,44 @@ img[loading="lazy"] {
 }
 
 /* Map Section */
-.map-section h3 {
+.map-section .map-title {
   font-size: 1.4rem;
   margin-bottom: 16px;
 }
 
-.map-section p {
+.map-section .map-address {
   font-size: 0.9rem;
   color: var(--muted-color);
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.map-section .map-container-custom {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.map-section .map-container-custom iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .map-section .map-container-custom {
+    height: 260px;
+    border-radius: 8px;
+  }
+
+  .map-section .map-container-custom iframe {
+    border-radius: 8px;
+  }
 }
 
 @media (max-width: 768px) {
