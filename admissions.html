@@ -400,11 +400,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
-<div id="videoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+<div id="videoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
   <div style="position:relative; width:80%; max-width:800px;">
-    <span id="closeVideoBtn" style="position:absolute; top:10px; right:15px; color:white; font-size:30px; cursor:pointer;">&times;</span>
-    <!-- فيديو يوتيوب -->
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/RsK3L72tZGo?si=KeOYq8AhfdhxHjzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <span id="closeVideoBtn" style="position:absolute; top:10px; right:15px; color:white; font-size:30px; cursor:pointer; z-index:10;">&times;</span>
+    <div style="position:relative; width:100%; aspect-ratio:16/9; background:#000; border-radius:12px; overflow:hidden;">
+      <iframe 
+        src="https://www.youtube.com/embed/RsK3L72tZGo?si=KeOYq8AhfdhxHjzp" 
+        title="YouTube video player" 
+        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 

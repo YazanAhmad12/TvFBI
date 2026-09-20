@@ -68,6 +68,13 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 a {
@@ -107,8 +114,21 @@ img {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+img[width], img[height] {
+  width: auto !important;
+  height: auto !important;
+}
+
 img[loading="lazy"] {
   opacity: 1;
+}
+
+video, iframe {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
 }
 
 .php-email-form .error-message {
@@ -4384,6 +4404,219 @@ textarea:focus-visible {
 
 .fade-in {
   animation: fadeIn 0.6s ease forwards;
+}
+
+/*--------------------------------------------------------------
+# Tablet Breakpoint (992px)
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2,
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+
+  .courses .course-card,
+  .events .event-card,
+  .testimonials .testimonial-card,
+  .news .news-card {
+    margin-bottom: 24px;
+  }
+
+  .about .content h3,
+  .campus-facilities h3 {
+    font-size: 1.4rem;
+  }
+
+  .video-section-wrapper {
+    padding: 40px 16px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mobile Breakpoint (768px)
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2,
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero .btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .courses-grid,
+  .events-grid,
+  .news-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about .content,
+  .campus-facilities .content {
+    padding: 0;
+  }
+
+  .footer .footer-links ul {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .footer .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .experience-tour {
+    padding: 40px 0;
+  }
+
+  .video-section-wrapper {
+    padding: 24px 12px;
+  }
+
+  .video-section-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .map-container-custom {
+    height: 260px;
+  }
+
+  .testimonials .testimonial-item {
+    padding: 20px;
+  }
+
+  .portfolio .portfolio-card {
+    margin-bottom: 16px;
+  }
+
+  .schedule-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-container {
+    padding: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Small Phone Breakpoint (480px)
+--------------------------------------------------------------*/
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-title p {
+    font-size: 0.85rem;
+  }
+
+  .hero h2,
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.88rem;
+  }
+
+  .hero .btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  .footer .footer-links ul {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .footer .footer-contact p {
+    font-size: 0.82rem;
+  }
+
+  .video-section-wrapper {
+    padding: 16px 8px;
+  }
+
+  .video-section-header h2 {
+    font-size: 1.15rem;
+  }
+
+  .video-section-header p {
+    font-size: 0.82rem;
+  }
+
+  .map-container-custom {
+    height: 220px;
+  }
+
+  .portfolio .portfolio-card .portfolio-title {
+    font-size: 0.95rem;
+  }
 }
 
 /*--------------------------------------------------------------

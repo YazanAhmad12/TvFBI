@@ -1,0 +1,92 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        royal: {
+          50: "#f0f4f8",
+          100: "#d9e2ec",
+          200: "#bcccdc",
+          300: "#9fb3c8",
+          400: "#829ab1",
+          500: "#627d98",
+          600: "#486581",
+          700: "#334e68",
+          800: "#243b53",
+          900: "#0F172A",
+          950: "#0a0f1a",
+        },
+        postal: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0284C7",
+          600: "#0369a1",
+          700: "#075985",
+          800: "#0c4a6e",
+          900: "#0e3d58",
+        },
+        gold: {
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#D97706",
+          600: "#b45309",
+          700: "#92400e",
+          800: "#78350f",
+          900: "#451a03",
+        },
+        slate: {
+          50: "#F8FAFC",
+          100: "#f1f5f9",
+          200: "#e2e8f0",
+          300: "#cbd5e1",
+          400: "#94a3b8",
+          500: "#64748b",
+          600: "#475569",
+          700: "#334155",
+          800: "#1e293b",
+          900: "#0f172a",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", "Noto Sans Arabic", "system-ui", "sans-serif"],
+        arabic: ["Noto Sans Arabic", "Tahoma", "sans-serif"],
+        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+      },
+      boxShadow: {
+        "card": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "card-hover": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "modal": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+        "glow-postal": "0 0 20px rgb(2 132 199 / 0.3)",
+        "glow-gold": "0 0 20px rgb(217 119 6 / 0.3)",
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s ease-out",
+        "slide-up": "slideUp 0.4s ease-out",
+        "slide-in-right": "slideInRight 0.3s ease-out",
+        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        slideInRight: {
+          "0%": { opacity: "0", transform: "translateX(20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
